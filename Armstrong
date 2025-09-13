@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int n,d,copy_n,copy2,sum=0,digits=0;
+    scanf("%d",&n);
+    copy_n=n;
+    copy2=n;
+    while(copy2!=0){
+        copy2=copy2/10;
+        digits++;
+    }
+    while(n!=0){
+        d=n%10;
+        sum+=pow(d,digits);
+        n=n/10;
+    }
+    printf("%d\n",sum);
+    if(copy_n==sum)
+    printf("its an armstrong number.");
+    else
+    printf("its not an armstrong number.");
+    
+
+    return 0;
+}
