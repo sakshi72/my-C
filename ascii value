@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+    int d1,d2,d3,d4;
+    scanf("%d %d %d %d",&d1,&d2,&d3,&d4);
+    printf("%d-%c\n%d-%c\n%d-%c\n%d-%c\n",d1,d1,d2,d2,d3,d3,d4,d4);
+
+    return 0;
+}
